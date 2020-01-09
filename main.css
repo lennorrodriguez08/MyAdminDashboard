@@ -1,0 +1,590 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    color: #FFFFFF;
+}
+
+/* ======================= HEADER ============================ */
+
+nav {
+    background: #343A40;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 2;
+}
+
+.branding {
+    line-height: 70px;
+}
+
+.branding i {
+    line-height: 70px;
+}
+
+.fa-registered {
+    font-size: 50px;
+}
+
+.branding .fa-angle-double-down {
+    display: none;
+    margin-right: 28px;
+}
+
+.branding .fa-angle-double-down:hover, .branding .fa-bars:hover {
+    cursor: pointer;
+}
+
+.fa-bars, .fa-angle-double-down {
+    font-size: 30px;
+    margin-right: 20px;
+}
+
+.branding span {
+    font-size: 18px;
+    padding-left: 10px;
+}
+
+.branding {
+    display: flex;
+    align-items: center;
+}
+
+.icons i {
+    font-size: 16px;
+    color: #CCCDCF;
+    padding: 0 10px;
+}
+
+.icons .fas fa-bell {
+    position: relative;
+}
+
+.notif-bell {
+    font-size: 10px;
+    background: #DC3545;
+    padding: 2px 2px 4px;
+    border-radius: 3px; 
+    position: absolute;
+    right: 121px;
+    top: 1em;
+}
+
+.notif-msg {
+    font-size: 10px;
+    background: #DC3545;
+    padding: 2px 2px 4px;
+    border-radius: 3px; 
+    position: absolute;
+    right: 85px;
+    top: 1em;
+}
+
+
+#toggle {
+    display: none;
+}
+/* ======================= CLOSING HEADER ============================ */
+
+/* ======================= SIDEBAR ============================ */
+
+.sidebar {
+    color: #FFFFFF;
+    position: fixed;
+    height: 400%;
+    top: 70px;
+    width: 180px;
+    z-index: 1;
+}
+
+.sidebar ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    height: 100%;
+    background: #212529;
+    text-align: justify;
+    padding-left: 15px;
+    
+}
+
+.sidebar ul li {
+    padding: 10px;
+}
+
+.sidebar ul li i {
+    font-size: 20px;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.sidebar ul li ul li a {
+    text-decoration: none;
+    color: #212529;
+}
+
+.sub-page li {
+    background: #FFFFFF;
+}
+
+.sub-page  {
+    margin-left: -13px;
+    font-weight: 500;   
+}
+
+.sidebar ul li ul {
+    display: none;
+}
+
+#target-page {
+    display: none;
+}
+
+.rotate {
+    transform: rotateZ(90deg);
+    transition: 0.3s;
+}
+
+
+/* ======================= CLOSING SIDEBAR ============================ */
+
+/* ====================== HOMEPAGE CONTENT / OVERVIEW =========================== */
+
+.homepage {
+    background: #FFFFFF;
+    color: #000000;
+    position: absolute;
+    left: 190px;
+    top: 70px;
+    right: 10px;
+    overflow: hidden;
+    z-index: 0;
+}
+
+.title-overview {
+    background: #E9ECEF;
+    width: 100%;
+    margin: 10px 0;
+    padding: 15px 25px;
+    color: #0056b3;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+/* ====================== CLOSING HOMEPAGE CONTENT / OVERVIEW =========================== */
+
+/* ====================== TOP BOXES =========================== */
+
+.parent-box {
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+}
+
+.task-box, .msg-box, .ticket-box, .order-box {
+    margin: 0 10px;
+}
+
+.task-box {
+    background: #007BFF;
+    width: 360px;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+}
+
+.msg-box {
+    background: #9D44B5;
+    width: 360px;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+}
+
+.ticket-box {
+    background: #D53342;
+    width: 360px;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+}
+
+.order-box {
+    background: #28A745;
+    width: 360px;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+}
+
+.task {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.task i {
+    font-size: 30px;
+}
+
+.task {
+    padding: 20px 20px 20px;;
+}
+
+.task-details {
+    padding: 15px 20px;
+    font-size: 13px;
+}
+
+.task-details a {
+    text-decoration: none; 
+    color: #FFFFFF;
+}
+
+/* ====================== CLOSING TOP BOXES =========================== */
+
+/* ====================== AREA CHART =========================== */
+
+.chart-img {
+    border: 1px solid rgba(0, 0, 0, 0.4);
+}
+
+.chart-overview {
+    background: #E9ECEF;
+    width: 100%;
+    margin: 10px 0 10px;;
+    padding: 15px 25px;
+    color: #0056b3;
+    font-size: 17px;
+    font-weight: 500;
+    
+}
+
+.chart-img img {
+    width: 100%;
+    max-height: 550px;
+    text-align: center;
+}
+
+.chart-update {
+    background: #EAEAEA;
+    width: 100%;
+    margin: 0px 0 0px;;
+    padding: 15px 25px;
+    color: #343A40;
+    font-size: 12px;
+    font-weight: 500;
+    border-top: 1px solid rgba(0, 0, 0, 0.4);
+    
+}
+
+
+/* ====================== CLOSING AREA CHART =========================== */
+
+/* ====================== DATA TABLE =========================== */
+
+.data-overview {
+    background: #E9ECEF;
+    width: 100%;
+    margin: 10px 0 10px;;
+    padding: 15px 25px;
+    color: #0056b3;
+    font-size: 17px;
+    font-weight: 500;
+    
+}
+
+.main-table {
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
+
+td {
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    padding: 10px 0;
+    text-align: center;
+    
+}
+
+.center {
+    text-align: center;
+    font-weight: 500;
+    padding: 15px 0;
+}
+
+.show-entry select {
+    padding: 5px 3px;
+    font-size: 14px;
+    margin: 0 10px;
+}
+
+.show-entry p {
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.show-entry {
+    display: flex;
+    align-items: center;
+    margin: 14px 0 5px 15px;
+}
+
+.search-bar input {
+    padding: 3px;
+    font-size: 15px;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
+.show-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left-box {
+    font-size: 15px;
+    margin-left: 15px;
+}
+
+.right-box p {
+    font-size: 15px;
+    padding: 7px 15px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.right-box {
+    display: flex;
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
+.right-box a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+.right-box a:nth-child(2) {
+    color: #000000;
+}
+
+.active {
+    background: #007bff;
+    color: #000000;
+}
+
+#active-1 {
+    color: #FFFFFF;
+}
+
+.showing-data {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.data-update {
+    background: #EAEAEA;
+    width: 100%;
+    margin: 10px 0 0px;;
+    padding: 15px 25px;
+    color: #343A40;
+    font-size: 12px;
+    font-weight: 500;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+/* ====================== CLOSING DATA TABLE =========================== */
+
+/* ====================== TABLES COMING =========================== */
+
+
+.table-soon {
+    height: 300px;
+    background: #EAEAEA;
+    margin-top: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    width: 100%;
+}
+
+.table-soon p {
+    text-align: center;
+    padding-top: 150px;
+    font-style: italic;
+    font-size: 12px;
+}
+
+
+/* ====================== END TABLES COMING =========================== */
+
+
+/* ====================== FOOTER =========================== */
+
+
+footer {
+    line-height: 70px;
+    background: #343A40;
+    color: #FFFFFF;
+    text-align: center;
+    font-weight: 17px;
+    margin-top: 10px;
+}
+
+.footer-r {
+    font-size: 17px;
+}
+
+
+/* ====================== FOOTER =========================== */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 1039px) {
+    
+   .parent-box {
+        flex-wrap: wrap;
+    }
+    
+    .task-box, .msg-box, .ticket-box, .order-box {
+        margin-bottom: 10px;
+
+    }
+}
+
+
+
+
+
+@media only screen and (max-width: 1000px) {
+    
+    .table {
+    overflow: scroll;
+    }
+    
+    .showing-data {
+        margin-top: 10px;
+    }
+    
+}
+
+
+
+
+
+@media only screen and (max-width: 980px) {
+    
+    .task-box, .msg-box, .ticket-box, .order-box {
+        width: 100%;
+    } 
+    
+    .show-main {
+        display: block;
+    }
+    
+    .showing-data {
+        display: block;
+    }
+    
+    .right-box {
+        margin-top: 10px;
+    }
+}
+
+
+
+
+
+@media only screen and (max-width: 759px) {
+    
+    .branding span {
+        display: none;
+    }
+        
+}
+
+
+
+
+
+@media only screen and (max-width: 610px) {
+    
+    .showing-data {
+        overflow: scroll;
+    }
+    
+    .right-box {
+        margin-bottom: 10px;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

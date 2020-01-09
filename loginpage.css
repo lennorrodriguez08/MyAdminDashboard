@@ -1,0 +1,96 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    color: #000000;
+    background: #343A40;
+    padding: 0 10px;
+}
+
+.login-icon {
+    text-align: center;
+    font-size: 100px;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    color: #FFFFFF;
+}
+
+.login-form {
+    background: #FFFFFF;
+    max-width: 370px;
+    margin: 0 auto;
+    border-radius: 3px;
+}
+
+.login-form p:nth-child(1) {
+    border-bottom: 1px solid rgba(0,0,0,0.4);
+    padding: 15px;
+    background: #E9ECEF;
+    color: #0056b3;
+    font-weight: 600;
+    font-size: 17px;
+    border-radius: 3px;
+}
+
+.main-form {
+    padding: 0 15px 15px;
+}
+
+input:focus {
+    outline: none;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 12px;
+    margin-top: 17px;
+    border-radius: 3px;
+    border: 1px solid rgba(0,0,0,0.4);
+}
+
+.main-form input:nth-child(2) {
+    margin-bottom: 17px;
+}
+
+button {
+    margin-top: 17px;
+    display: block;
+    width: 100%;
+    padding: 11px;
+    margin-bottom: 17px;
+    background: #0056b3;
+    color: #FFFFFF;
+    border: 0;
+    border-radius: 3px;
+    font-size: 15px;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+input::placeholder {
+    font-size: 15px;
+}
+
+.main-form p, .main-form a {
+    text-align: center;
+    text-decoration: none;
+    font-size: 14px;
+    color: #0056b3;
+    font-weight: 500;
+}
+
+.main-form p:last-child {
+    padding: 10px;
+}

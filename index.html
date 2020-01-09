@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Web Dev Solutions | Dashboard</title>
+<link href="https://fonts.googleapis.com/css?family=Raleway:400,500,600,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="main.css">
+<script src="https://kit.fontawesome.com/34a28b49e2.js" crossorigin="anonymous"></script>	
+<script src="script.js"></script>
+</head>
+<body>
+    <header>
+       <nav>
+          <div class="branding">
+             <i class="fas fa-angle-double-down" title="Show Sidebar"></i>
+             <i class="fas fa-bars" title="Hide Sidebar"></i>
+             <i class="far fa-registered"></i>
+             <span>Web Development Solutions</span>
+          </div>
+          <div class="icons">
+              <a href="#"><i class="fas fa-bell"></i></a>
+              <a href="#"><i class="fas fa-envelope"></i></a>
+              <a href="#"><i class="fas fa-user-circle"></i></a>
+              <span class="notif-bell">+9&nbsp;</span>
+              <span class="notif-msg">+5&nbsp;
+              </span>
+          </div>
+       </nav>
+    </header> 
+    <div class="sidebar">
+        <ul>
+            <li><a href="index.html"><i class="fas fa-tachometer-alt"></i>&nbsp;&nbsp;&nbsp;&nbsp;Dashboard</a></li>
+            <li class="main-page"><label for="target-page"><i class="fas fa-fw fa-folder"></i>&nbsp;&nbsp;&nbsp;&nbsp;Pages&nbsp;&nbsp;&nbsp;
+              <i class="fas fa-angle-right"></i>
+               </label><input type="checkbox" id="target-page">
+                <ul class="sub-page">
+                    <li><a href="loginpage.html">Login</a></li>
+                    <li><a href="registration.html">Register</a></li>
+                    <li><a href="forgotpw.html">Forgot Password</a></li>
+                </ul>
+            </li>
+            <li><a href="#forReport"><i class="fas fa-chart-line"></i>&nbsp;&nbsp;&nbsp;&nbsp;Reports</a></li>
+            <li><a href="#forData"><i class="fas fa-fw fa-table"></i>&nbsp;&nbsp;&nbsp;&nbsp;Data Tables</a></li>
+        </ul>
+    </div>
+    <section class="homepage">
+        <div class="title-overview">
+        <p>Administrator Overview</p>
+        </div>
+        <div class="parent-box">
+            <div class="task-box">
+                <div class="task">
+                    <p>50 New Tasks!</p>
+                    <i class="fas fa-clipboard-list"></i>
+                </div>
+                <p class="task-details"><a href="#">View Details</a></p>
+            </div>
+            <div class="msg-box">
+                <div class="task">
+                    <p>9 New Messages!</p>
+                    <i class="fas fa-envelope-open-text"></i>
+                </div>
+                <p class="task-details"><a href="#">View Details</a></p>
+            </div>
+            <div class="ticket-box">
+                <div class="task">
+                    <p>31 New Tickets!</p>
+                    <i class="fas fa-list"></i>
+                </div>
+                <p class="task-details"><a href="#">View Details</a></p>
+            </div>
+            <div class="order-box">
+                <div class="task">
+                    <p>25 New Orders!</p>
+                    <i class="fas fa-sort-amount-up-alt"></i>
+                </div>
+                <p class="task-details"><a href="#">View Details</a></p>
+            </div>
+        </div>
+        <div class="area-chart">
+            <div class="chart-overview">
+                <p id="forReport">Area Chart Sample</p>
+            </div>
+            <div class="chart-img">
+                <img src="img/areaChart1.jpg" alt="">
+                <div class="chart-update">
+        <p>Updated yesterday at 12:45 PM</p>
+        </div>
+            </div>
+        </div>
+        <div class="data-table">
+            <div class="data-overview">
+                <p id="forData">Information Table Sample</p>
+            </div>
+               <div class="show-main">
+                    <div class="show-entry">
+                        <p>Show</p>
+                        <select name="" id="">
+                            <option value="">10</option>
+                            <option value="">20</option>
+                            <option value="">30</option>
+                        </select>
+                        <p>Data Entries</p>
+                    </div>
+                    <div class="search-bar">
+                        <p>Search:&nbsp;</p>
+                        <input type="text">
+                    </div>
+              </div> 
+            <div class="table">
+               
+               <table border="0" width="100%" cellpadding="0" cellspacing="0" role="presentation" class="main-table">
+                   
+                   <tr>
+                       <td style="width: 350px; min-width: 200px; border: 0;">
+                          
+                          <table border="0" width="100%" cellpadding="0" cellspacing="0" role="presentation">
+                              <tr>
+                                  <td class="center">
+                                     Name
+                                  </td>
+                              </tr>
+                              <tr>
+                                  <td>
+                                     Ronnel Rodriguez
+                                  </td>
+                              </tr>
+                              <tr>
+                                  <td>
+                                     Olivia Arellano
+                                  </td>
+                              </tr>
+                              <tr>
+                                  <td>
+                                     Roy Allen Moreno
+                                  </td>
+                              </tr>
+                              <tr>
+                                  <td>
+                                     Generu Gerry Manga
+                                  </td>
+                              </tr>
+                              <tr>
+                                  <td>
+                                     Xyron Doctolero
+                                  </td>
+                              </tr>
+                              <tr>
+                                  <td>
+                                     Eingel Marcel Figueroa
+                                  </td>
+                              </tr>
+                              <tr>
+                                  <td>
+                                     Fredrick Sam Arellano
+                                  </td>
+                              </tr>
+                              <tr>
+                                  <td>
+                                     Carl Jude Masarque
+                                  </td>
+                              </tr>
+                              <tr>
+                                  <td>
+                                     Lloyd Cedrick Lagmay
+                                  </td>
+                              </tr>
+                              <tr>
+                                  <td>
+                                     Jeremy Samonte
+                                  </td>
+                              </tr>
+                           </table>
+                           
+                       </td>
+                       <td style="width: 350px; min-width: 200px; border: 0;">
+                          
+                          <table border="0" width="100%" cellpadding="0" cellspacing="0" role="presentation">
+                              <tr>
+                                  <td class="center">
+                                     Job Role
+                                  </td>
+                              </tr>
+                              <tr>
+                                  <td>
+                                     Full Stack Dev
+                                  </td>
+                              </tr>
+                              <tr>
+                                  <td>
+                                     HR Lead
+                                  </td>
+                              </tr>
+                              <tr>
+                                  <td>
+                                     Full Stack Dev
+                                  </td>
+                              </tr>
+                              <tr>
+                                  <td>
+                                     Process Engineer
+                                  </td>
+                              </tr>
+                              <tr>
+                                  <td>
+                                     Production Engineer
+                                  </td>
+                              </tr>
+                              <tr>
+                                  <td>
+                                     Project Manager
+                                  </td>
+                              </tr>
+                              <tr>
+                                  <td>
+                                     Architectural Visualizer
+                                  </td>
+                              </tr>
+                              <tr>
+                                  <td>
+                                     SSO Manager
+                                  </td>
+                              </tr>
+                              <tr>
+                                  <td>
+                                     Brand Manager
+                                  </td>
+                              </tr>
+                              <tr>
+                                  <td>
+                                     MIS Lead
+                                  </td>
+                              </tr>
+                           </table>
+                           
+                       </td>
+                       <td style="width: 350px; min-width: 200px; border: 0;">
+                          
+                          <table border="0" width="100%" cellpadding="0" cellspacing="0" role="presentation">
+                              <tr>
+                                  <td class="center">
+                                     Start Date
+                                  </td>
+                              </tr>
+                              <tr>
+                                  <td>
+                                     January 8, 2020
+                                  </td>
+                              </tr>
+                              <tr>
+                                  <td>
+                                     January 8, 2020
+                                  </td>
+                              </tr>
+                              <tr>
+                                  <td>
+                                     January 8, 2020
+                                  </td>
+                              </tr>
+                              <tr>
+                                  <td>
+                                     January 8, 2020
+                                  </td>
+                              </tr>
+                              <tr>
+                                  <td>
+                                     January 8, 2020
+                                  </td>
+                              </tr>
+                              <tr>
+                                  <td>
+                                     January 8, 2020
+                                  </td>
+                              </tr>
+                              <tr>
+                                  <td>
+                                     January 8, 2020
+                                  </td>
+                              </tr>
+                              <tr>
+                                  <td>
+                                     January 8, 2020
+                                  </td>
+                              </tr>
+                              <tr>
+                                  <td>
+                                     January 8, 2020
+                                  </td>
+                              </tr>
+                              <tr>
+                                  <td>
+                                     January 8, 2020
+                                  </td>
+                              </tr>
+                           </table>
+                           
+                       </td>
+                       <td style="width: 350px; min-width: 200px; border: 0;">
+                          
+                          <table border="0" width="100%" cellpadding="0" cellspacing="0" role="presentation">
+                              <tr>
+                                  <td class="center">
+                                     Monthly Salary
+                                  </td>
+                              </tr>
+                              <tr>
+                                  <td>
+                                     P49.000.00 
+                                  </td>
+                              </tr>
+                              <tr>
+                                  <td>
+                                     P49.000.00 
+                                  </td>
+                              </tr>
+                              <tr>
+                                  <td>
+                                     P49.000.00 
+                                  </td>
+                              </tr>
+                              <tr>
+                                  <td>
+                                     P49.000.00 
+                                  </td>
+                              </tr>
+                              <tr>
+                                  <td>
+                                     P49.000.00 
+                                  </td>
+                              </tr>
+                              <tr>
+                                  <td>
+                                     P49.000.00 
+                                  </td>
+                              </tr>
+                              <tr>
+                                  <td>
+                                     P49.000.00 
+                                  </td>
+                              </tr>
+                              <tr>
+                                  <td>
+                                     P49.000.00 
+                                  </td>
+                              </tr>
+                              <tr>
+                                  <td>
+                                     P49.000.00 
+                                  </td>
+                              </tr>
+                              <tr>
+                                  <td>
+                                     P49.000.00 
+                                  </td>
+                              </tr>
+                           </table>
+                           
+                       </td>
+                   </tr>
+                   
+               </table>
+                
+            </div>
+        </div>
+        <div class="showing-data">
+            <div class="left-box">
+                <p>Showing 1 to 10 of 10 Entries</p>
+            </div>
+            <div class="right-box">
+                <p><a href="#">Previous</a></p>
+                <p class="active"><a href="#" id="active-1">1</a></p>
+                <p><a href="#">2</a></p>
+                <p><a href="#">3</a></p>
+                <p><a href="#">4</a></p>
+                <p><a href="#">5</a></p>
+                <p><a href="#">Next</a></p>
+            </div>
+        </div>
+        <div class="data-update">
+        <p>Updated yesterday at 12:45 PM</p>
+        </div>
+        <div class="table-soon">
+            <p>Other tables are coming soon.</p>
+        </div>
+        <footer>
+            <p>Copyright <i class="far fa-registered footer-r"></i> Web Dev Solutions 2019</p>
+        </footer>
+    </section>
+</body>
+</html>
